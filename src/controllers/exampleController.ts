@@ -9,7 +9,7 @@ export const getExamples = async (
 ) => {
   try {
     const data = await getExampleData()
-    logger.warn("Remember: Remove home page")
+    logger.warn("REMEMBER: Remove home page")
     res.json({ success: true, data })
   } catch (error) {
     next(error)
